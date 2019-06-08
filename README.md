@@ -2,7 +2,7 @@
 
 This project is modified from 
 
-[U-Net Brain Tumor Segmentation]: https://github.com/zsdonghao/u-net-brain-tumor
+https://github.com/zsdonghao/u-net-brain-tumor
 
 #### The changes are listed below:
 
@@ -16,7 +16,7 @@ This project is modified from
 
 The dataset used in the project is BraTS 2018, which can be applied here:
 
-[Dataset]: https://www.med.upenn.edu/sbia/brats2018/registration.html
+https://www.med.upenn.edu/sbia/brats2018/registration.html
 
 Because of the license, I am not allowed to share the dataset, I only remain one MRI series in dataset folder to perform as a demo for `run.py`, contact me and I will remove that if it is not allowed.
 
@@ -26,7 +26,7 @@ I trained the model on a `small` part of BraTS 2018 dataset using Nvidia Tesla V
 
 Download link:
 
-[Google Drive]: https://drive.google.com/file/d/1IPX5oKErah_0jumILGfNhaZMfI8v0sd-/view?usp=sharing
+https://drive.google.com/file/d/1IPX5oKErah_0jumILGfNhaZMfI8v0sd-/view?usp=sharing
 
 For Chinese users, I believe you are able to access to Google Drive(smile). 
 
