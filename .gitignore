@@ -1,13 +1,3 @@
-orlaye/__pacache__
-tensorlaye/.DS_Store
-.DS_Store
-dist
-build/
-tensorlayer.egg-info
-data/.DS_Store
-*.pyc
-*.gz
-
 \.idea/
 
 *.npz
@@ -15,3 +5,8 @@ data/.DS_Store
 samples/all/
 
 data/MICCAI_BraTS_2018_Data_Training/survival_data\.csv
+
+!data/MICCAI_BraTS_2018_Data_Training/LGG/Brats18_2013_24_1
+data/MICCAI_BraTS_2018_Data_Training/HGG/
+
+data/MICCAI_BraTS_2018_Data_Training/LGG/
