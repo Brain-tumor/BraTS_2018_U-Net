@@ -1,4 +1,42 @@
-# U-Net Brain Tumor Segmentation 
+# U-Net Segmentation for BraTS-2018 Dataset
+
+This project is modified from 
+
+[U-Net Brain Tumor Segmentation]: https://github.com/zsdonghao/u-net-brain-tumor
+
+#### The changes are listed below:
+
+- Using BraTS-2018 dataset by default.
+- Removed survival data processing part which is not used, and reconstruct the data loading part.
+- **Important**: Using Tensorflow 1.12 and Tensorlayer 1.11.0 now. 
+- **Important**: Added new method to view prediction for one image.
+- Some coding style changes.
+
+#### About the dataset
+
+The dataset used in the project is BraTS 2018, which can be applied here:
+
+[Dataset]: https://www.med.upenn.edu/sbia/brats2018/registration.html
+
+Because of the license, I am not allowed to share the dataset, I only remain one MRI series in dataset folder to perform as a demo for `run.py`, contact me and I will remove that if it is not allowed.
+
+#### About the pre-trained model weights
+
+I trained the model on a `small` part of BraTS 2018 dataset using Nvidia Tesla V100 32GB for 100 epoches, which spent about one and a half days. I will continue training on the full dataset later.
+
+Download link:
+
+[Google Drive]: https://drive.google.com/file/d/1IPX5oKErah_0jumILGfNhaZMfI8v0sd-/view?usp=sharing
+
+For Chinese users, I believe you are able to access to Google Drive(smile). 
+
+![test_0](assets/test_0.png)
+
+
+
+#### The read-me document of the original project is below:
+
+#### U-Net Brain Tumor Segmentation 
 
 🚀：Feb 2019 the data processing implementation in this repo is not the fastest way (code need update, contribution is welcome), you can use TensorFlow dataset API instead.
 
@@ -17,10 +55,11 @@ train.py
 Note that according to the license, user have to apply the dataset from BRAST, please do **NOT** contact me for the dataset. Many thanks.
 
 <div align="center">
-    <img src="https://github.com/zsdonghao/u-net-brain-tumor/blob/master/example/brain_tumor_data.png" width="80%" height="50%"/>
+    <img src="example/brain_tumor_data.png" width="80%" height="50%"/>
     <br>  
     <em align="center">Fig 1: Brain Image</em>  
 </div>
+
 
 * Each volume have 4 scanning images: FLAIR、T1、T1c and T2.
 * Each volume have 4 segmentation labels:
@@ -41,10 +80,11 @@ The `prepare_data_with_valid.py` split the training set into 2 folds for trainin
 - Data augmenation: Includes random left and right flip, rotation, shifting, shearing, zooming and the most important one -- [Elastic trasnformation](http://tensorlayer.readthedocs.io/en/latest/modules/prepro.html#elastic-transform), see ["Automatic Brain Tumor Detection and Segmentation Using U-Net Based Fully Convolutional Networks"](https://arxiv.org/pdf/1705.03820.pdf) for details.
 
 <div align="center">
-    <img src="https://github.com/zsdonghao/u-net-brain-tumor/blob/master/example/brain_tumor_aug.png" width="80%" height="50%"/>
+    <img src="example/brain_tumor_aug.png" width="80%" height="50%"/>
     <br>  
     <em align="center">Fig 2: Data augmentation</em>  
 </div>
+
 
 ### Start training
 

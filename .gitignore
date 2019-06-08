@@ -7,3 +7,11 @@ tensorlayer.egg-info
 data/.DS_Store
 *.pyc
 *.gz
+
+\.idea/
+
+*.npz
+
+samples/all/
+
+data/MICCAI_BraTS_2018_Data_Training/survival_data\.csv
